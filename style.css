@@ -1,0 +1,110 @@
+/* OBLIVION CYBER-MODERN BLUE THEME */
+:root {
+    --main-blue: #00d2ff;
+    --dark-blue: #004e92;
+    --deep-void: #020b16;
+    --neon-glow: 0 0 15px rgba(0, 210, 255, 0.7);
+}
+
+body {
+    background: radial-gradient(circle at center, var(--dark-blue) 0%, var(--deep-void) 100%);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container utama hasil colongan top4top */
+.main-container, #container, center {
+    background: rgba(2, 11, 22, 0.8);
+    border: 1px solid var(--main-blue);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: var(--neon-glow);
+    max-width: 900px;
+    margin: 40px auto;
+    backdrop-filter: blur(10px);
+}
+
+/* Judul & Teks */
+h1, h2, h3, b {
+    color: var(--main-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px var(--main-blue);
+}
+
+/* Link hasil colongan */
+a {
+    color: var(--main-blue);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 15px var(--main-blue);
+}
+
+/* Kotak Input/Upload */
+input[type="text"], input[type="file"], textarea {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: inset 0 0 5px var(--main-blue);
+}
+
+/* Tombol Upload Gahar */
+input[type="submit"], button, .button {
+    background: linear-gradient(45deg, var(--dark-blue), var(--main-blue));
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    width: 100%;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover, button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 210, 255, 0.5);
+    letter-spacing: 3px;
+}
+
+/* Table buat list file */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: var(--dark-blue);
+    color: #fff;
+    padding: 10px;
+}
+
+td {
+    border-bottom: 1px solid rgba(0, 210, 255, 0.2);
+    padding: 12px;
+}
+
+/* Efek Animasi tambahan */
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+.neon-text {
+    animation: pulse 2s infinite;
+}
